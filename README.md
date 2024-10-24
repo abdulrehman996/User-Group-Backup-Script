@@ -12,10 +12,10 @@ This project provides a comprehensive shell script-based solution for managing u
 - **Help System**: Detailed help scripts for guiding users through different operations.
 
 ## 📂 Project Structure
-├── backup
-│   └── backup_directory.sh
-├── help
-│   ├── add_user_to_group_help.sh
+\├── backup
+\│   └── backup_directory.sh
+\├── help
+\│   ├── add_user_to_group_help.sh
 │   ├── backup_directory_help.sh
 │   ├── create_group_help.sh
 │   ├── create_new_user_help.sh
