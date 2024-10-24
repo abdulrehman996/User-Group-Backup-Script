@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Function to provide help for creating a new user
+function create_new_user_help() {
+    echo "----------------------------------------------"
+    echo "           🛠️  Help: Create New User"
+    echo "----------------------------------------------"
+    echo "This option allows you to create a new user on the system."
+    echo "Usage:"
+    echo "  You will be prompted to enter the username."
+    echo "  The script will attempt to create a new user with that username."
+    echo ""
+    echo "Commands used:"
+    echo "  1. useradd <username>: This command is used to create a new user."
+    echo "     The 'useradd' command is used to add a new user to the system with the default settings."
+    echo ""
+    echo "Options for useradd:"
+    echo "  - -d <directory>: Set the home directory for the new user."
+    echo "  - -s <shell>: Specify the default login shell (e.g., /bin/bash, /bin/sh)."
+    echo "  - -m: Create the user's home directory if it does not exist."
+    echo "  - -g <group>: Specify the initial login group."
+    echo ""
+    echo "Example Usage:"
+    echo "  - Create a user with default settings:"
+    echo "      sudo useradd john"
+    echo ""
+    echo "  - Create a user with a specific home directory and shell:"
+    echo "      sudo useradd -d /home/john -s /bin/bash john"
+    echo ""
+    echo ""
+    echo "Make sure you have root or sudo privileges before running this command."
+    echo "----------------------------------------------"
+}
