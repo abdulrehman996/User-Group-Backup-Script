@@ -70,7 +70,7 @@ The system starts with the `main.sh` script. It provides an interactive menu-bas
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/abdulrehman996/User-Group-Backup-Script.git
 ```
 
 ### Make the scripts executable:
