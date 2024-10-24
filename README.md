@@ -12,26 +12,6 @@ This project provides a comprehensive shell script-based solution for managing u
 - **Help System**: Detailed help scripts for guiding users through different operations.
 
 ## 📂 Project Structure
-\├── backup
-\│   └── backup_directory.sh
-\├── help
-\│   ├── add_user_to_group_help.sh
-│   ├── backup_directory_help.sh
-│   ├── create_group_help.sh
-│   ├── create_new_user_help.sh
-│   ├── delete_user_help.sh
-│   ├── modify_user_help.sh
-│   └── remove_user_from_group_help.sh
-├── user_administrator
-│   ├── add_user_to_group.sh
-│   ├── create_group.sh
-│   ├── create_new_user.sh
-│   ├── delete_user.sh
-│   ├── modify_user.sh
-│   └── remove_user_from_group.sh
-├── main.sh
-├── user_help.sh
-└── user_menu.sh
 
 - **backup/**: Contains scripts for handling directory backups.
 - **help/**: Contains help scripts for each of the management tasks.
@@ -72,4 +52,69 @@ The system starts with the `main.sh` script. It provides an interactive menu-bas
 
 ```bash
 git clone https://github.com/yourusername/yourrepository.git
-bash```
+```
+
+### Make the scripts executable:
+
+```bash
+chmod +x backup/*.sh
+chmod +x help/*.sh
+chmod +x user_administrator/*.sh
+chmod +x main.sh user_help.sh user_menu.sh
+```
+
+### Run the User Management System:
+
+```bash
+./main.sh
+```
+
+## ⚙️ Script Functionality
+
+### User Creation
+
+Run the `create_new_user.sh` script to create a new user with specific home directory, shell, and group options.
+
+### User Deletion
+
+Use the `delete_user.sh` script to remove a user from the system, optionally removing their home directory.
+
+### User Modification
+
+Run the `modify_user.sh` script to modify user details such as shell, home directory, groups, and password.
+
+### Group Management
+
+- **Create a Group**: The `create_group.sh` script lets you create new user groups.
+- **Add User to Group**: Use `add_user_to_group.sh` to assign users to existing groups.
+- **Remove User from Group**: The `remove_user_from_group.sh` script allows you to remove a user from a group.
+
+### Backup System
+The `backup_directory.sh` script allows for automated directory backups with a timestamped filename for version control.
+
+
+## 🔧 Example Workflows
+
+### Creating a New User:
+```bash
+./user_administrator/create_new_user.sh
+```
+
+You will be prompted for the username, home directory, shell, and group details. After completion, the user will be added to the system.
+
+### Backing up a Directory:
+
+```bash
+./backup/backup_directory.sh
+```
+
+This will prompt you for the directory to back up and the destination directory for the backup file. A timestamped `.tar.gz` file will be created.
+
+## 📑 Help System
+
+Each task comes with a detailed help script. To access the help system, type help in the main menu and select the corresponding help option.
+
+```bash
+source ./help/create_new_user_help.sh
+```
+This will display the help information for creating a new user, guiding you through the steps.
