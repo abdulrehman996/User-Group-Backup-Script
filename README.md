@@ -13,12 +13,31 @@ This project provides a comprehensive shell script-based solution for managing u
 
 ## 📂 Project Structure
 
-- **backup/**: Contains scripts for handling directory backups.
-- **help/**: Contains help scripts for each of the management tasks.
-- **user_administrator/**: Contains core scripts for managing users and groups.
-- **main.sh**: The main entry point for the project.
-- **user_help.sh**: Sources all the help scripts.
-- **user_menu.sh**: Contains the menu structure for the system.
+### Directory and File Breakdown
+
+- **backup/**: 
+  - `backup_directory.sh`: Script to backup a specific directory.
+
+- **help/**: 
+  - `add_user_to_group_help.sh`: Help script for adding a user to a group.
+  - `backup_directory_help.sh`: Help script for backing up directories.
+  - `create_group_help.sh`: Help script for creating a group.
+  - `create_new_user_help.sh`: Help script for creating a new user.
+  - `delete_user_help.sh`: Help script for deleting a user.
+  - `modify_user_help.sh`: Help script for modifying user information.
+  - `remove_user_from_group_help.sh`: Help script for removing a user from a group.
+
+- **user_administrator/**:
+  - `add_user_to_group.sh`: Script to add a user to a group.
+  - `create_group.sh`: Script to create a new group.
+  - `create_new_user.sh`: Script to create a new user.
+  - `delete_user.sh`: Script to delete a user.
+  - `modify_user.sh`: Script to modify user information.
+  - `remove_user_from_group.sh`: Script to remove a user from a group.
+
+- **main.sh**: Main script that ties together the user administration scripts.
+- **user_help.sh**: Displays help information for user-related tasks.
+- **user_menu.sh**: Displays a menu for managing user administration tasks.
 
 ## 🛠️ System Usage
 
